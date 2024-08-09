@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bus-seat-map {
+  @apply flex flex-col items-center p-5;
+}
+
+.side-seats {
+  @apply flex flex-col w-full gap-2;
+}
+
+.seat-row {
+  @apply flex justify-between w-full;
+}
+
+.row-side {
+  @apply flex flex-row gap-2;
+}
+
+.last-row {
+  @apply flex justify-center mt-4 gap-2;
+}
+
+.seat {
+  @apply bg-green-500 w-10 h-10 flex items-center justify-center border  rounded-md text-sm text-black;
+}
+
+.seat:hover {
+  @apply bg-green-700;
+}
+
+.selected {
+  @apply bg-blue-400;
+}
+
+.enabled {
+  @apply cursor-pointer;
+}
+
+.disabled {
+  @apply bg-gray-400 cursor-not-allowed;
+}
+
+.unavailable {
+  @apply bg-gray-400 text-white;
+}
